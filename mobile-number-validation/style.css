@@ -1,0 +1,399 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: "Comfortaa";
+  background: #eee;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  width: 40%;
+  margin: 3rem auto auto;
+  padding: 1rem;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  column-gap: 140px;
+}
+
+.icons-left {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.icons span {
+  font-size: 0.8rem;
+  margin: 0.2rem;
+}
+
+.text {
+  font-family: "Lora";
+}
+
+.circle {
+  font-weight: bolder;
+  font-size: 1.8rem;
+  position: absolute;
+  top: -12px;
+  left: 100px;
+}
+
+.icons-right {
+  z-index: 1;
+}
+
+.photos {
+  display: flex;
+  align-content: center;
+}
+
+.photos img {
+  width: 11%;
+  aspect-ratio: 2/3;
+  object-fit: contain;
+  mix-blend-mode: color-burn;
+}
+
+.photos .percent {
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  margin: 3rem 0 0 0;
+  column-gap: 250px;
+}
+
+.phone {
+  font-size: 1rem;
+  font-family: "Poppins";
+}
+
+.search-icons i {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.input-place {
+  margin: 5rem 0;
+}
+
+input {
+  width: 100%;
+  font-size: 3rem;
+}
+
+input[type="text"] {
+  padding: 0 2rem;
+}
+
+.message {
+  font-size: 0.8rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.buttons {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 50px;
+  row-gap: 40px;
+}
+
+.btn {
+    border-radius: 50%;
+    height: 62px;
+    width: 62px; 
+    text-align: center;
+    padding: 7px;
+}
+
+.btn:hover, .btn:active {
+    background: rgba(224, 224, 224, 0.9);
+    cursor: pointer;
+}
+
+.btn span {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.btn p {
+  font-size: 0.7rem;
+  color: gray;
+  text-align: center;
+}
+
+.phone-icon {
+  margin-top: 3rem;
+  background-color: rgba(207, 144, 27, 0.8);
+  padding: 1.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.phone-icon:hover, .phone-icon:active {
+    background-color: rgba(192, 132, 19, 0.8);
+}
+
+.phone-icon .fa-phone {
+  font-size: 2rem;
+  color: white;
+}
+
+.bottom {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+  font-family: "Poppins";
+  font-size: 0.7rem;
+}
+
+.keypad {
+  border-bottom: 2px solid black;
+  font-weight: 700;
+}
+
+.recents,
+.contacts {
+  color: gray;
+}
+
+.last-icons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 100px;
+  margin-top: 2rem;
+  color: gray;
+}
+
+.bars {
+  transform: rotate(90deg);
+}
+
+.square {
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: 2px solid gray;
+  padding: 0.2rem 0.4rem;
+}
+
+@media screen and (max-width: 912px) {
+.header {
+    column-gap: 200px;
+}
+.container {
+    width: 50%;
+}
+}
+
+@media screen and (max-width: 820px) {
+    .header {
+        column-gap: 160px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+.header {
+    column-gap: 140px;
+}
+.section {
+    column-gap: 220px;
+} 
+.photos .percent {
+    margin-top: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 725px) {
+    .header {
+        column-gap: 130px;
+    }
+    .section {
+        column-gap: 200px;
+    } 
+}
+
+@media screen and (max-width: 685px) {
+    .header {
+        column-gap: 120px;
+    }
+    .section {
+        column-gap: 190px;
+    } 
+}
+
+@media screen and (max-width: 665px) {
+    .header {
+        column-gap: 110px;
+    }
+    .section {
+        column-gap: 180px;
+    } 
+}
+
+@media screen and (max-width: 645px) {
+    .container {
+        width: 50%;
+    }
+    .header {
+        column-gap: 120px;
+    }
+    .icons span {
+        font-size: 0.7rem;
+        margin: 0.1rem;
+     }
+     .text {
+        padding-bottom: .1rem;
+     }
+    .circle {
+        position: absolute;
+        top: -15px;
+        left: 70px;
+    }
+    .photos .percent {
+        margin-top: 0.2rem;
+        font-size: 0.7rem;
+      }
+    .section {
+        margin: 2rem 0 0 0;
+        column-gap: 190px;
+    } 
+    .phone {
+        font-size: 0.8rem;
+    }
+    .search-icons i {
+        font-size: 1rem;
+        margin: 0 0.3rem;
+    }
+    .input-place {
+        margin: 3rem 0;
+    }
+    input {
+        font-size: 2.5rem;
+    }
+    .buttons {
+        column-gap: 40px;
+        row-gap: 20px;
+    }
+    .btn span {
+        font-size: 1.7rem;
+    } 
+    .btn p {
+        font-size: 0.6rem;
+    }
+    .phone-icon {
+        margin-top: 1.5rem;
+        padding: 1.3rem;
+    }
+    .phone-icon .fa-phone {
+        font-size: 1.5rem;
+    }
+    .last-icons {
+        margin-top: 1rem;
+        font-size: .8rem;
+    }
+    .square {
+        font-size: 0.7rem;
+        border-radius: 5px;
+        padding: 0.15rem 0.3rem;
+    }
+}
+
+@media screen and (max-width:615px) {
+    .header {
+        column-gap: 100px;
+    }
+}
+
+@media screen and (max-width:615px) {
+    .container {
+        width: 55%;
+    }
+    .header {
+        column-gap: 120px;
+    }
+}
+
+@media screen and (max-width:555px) {
+    .container {
+        width: 60%;
+    }
+    .header {
+        column-gap: 130px;
+    }
+}
+
+@media screen and (max-width:512px) {
+    .container {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width:475px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .container {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .container {
+        width: 80%;
+    }
+    .header {
+        column-gap: 120px;
+    }
+}
+
+@media screen and (max-width:385px) {
+    .container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:325px) {
+    .container {
+        width: 100%;
+    }
+}
